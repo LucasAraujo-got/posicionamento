@@ -17,39 +17,33 @@
             text-align: center;
         }
         #menu{
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 50px;
+            float:left;
+            width: 100%;
         }
         #direita{
-            position: absolute;
-            top: 50px;
-            right: 0;
-            bottom: 50px;
+            float: right;
             width: 20%;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 10px;
         }
         #esquerda{
-            position: absolute;
-            top: 50px;
-            left: 0;
-            bottom: 50px;
+            float: left;
             width: 20%;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 10px;
         }
         #rodape{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            clear: both;
             height: 50px;
         }
         #conteudo{
-            position: absolute;
-            top: 50px;
-            left: 20%;
-            right: 20%;
-            bottom: 50px;
+            float: left;
+            width: 60%;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 10px;
         }
     </style>
 </head>
@@ -59,19 +53,9 @@
             menu
         </p>
     </div>
-    <div id="direita" class="box">
-        <p>
-            direita
-        </p>
-    </div>
     <div id="esquerda" class="box">
         <p>
             esquerda
-        </p>
-    </div>
-    <div id="rodape" class="box">
-        <p>
-            rodapé
         </p>
     </div>
     <div id="conteudo" class="box">
@@ -79,5 +63,15 @@
             conteúdo central
         </p>
     </div>
+    <div id="direita" class="box">
+        <p>
+            direita
+        </p>
+    </div>
+    <div id="rodape" class="box">
+        <p>
+            rodapé
+        </p>
+    </div>
 </body>
-</html> 
+</html>
