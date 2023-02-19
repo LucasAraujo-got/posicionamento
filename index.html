@@ -10,47 +10,41 @@
             font-family:Verdana, Geneva, Tahoma, sans-serif ;
             margin:0px;
         }
+        
         .box{
             border:2px solid blue;
             padding: 2px;
             box-sizing: border-box;
             text-align: center;
+            float: left;
+            width: 100vw;
+            height: 5vh;
         }
-        #menu{
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 50px;
+
+        #direita, #esquerda, #conteudo{
+            height: calc(100vh - 10vh);
         }
+
         #direita{
-            position: absolute;
-            top: 50px;
-            right: 0;
-            bottom: 50px;
-            width: 20%;
+            float: right;
         }
-        #esquerda{
-            position: absolute;
-            top: 50px;
-            left: 0;
-            bottom: 50px;
-            width: 20%;
+
+        #esquerda, #direita{
+            width: 25vw;
         }
-        #rodape{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 50px;
-        }
+        
         #conteudo{
-            position: absolute;
-            top: 50px;
-            left: 20%;
-            right: 20%;
-            bottom: 50px;
+            width: 50vw;
         }
+
+        #rodape{
+           position: fixed;
+           bottom: 0px;
+        }
+
+
+
+        
     </style>
 </head>
 <body>
